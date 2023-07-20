@@ -1,0 +1,91 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-hvCqb+GFek6JGgD79zW8ZvE9zzc0MXQsfa6yzEDwE2OOWPGlFqlEpTpux43P0xIHEBpC9Xg3Lbqz3qHniYcWsQ==" crossorigin="anonymous" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    {{>navbar}}
+
+    {{!hero section strat}}
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <div
+              class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex justify-content-center align-items-start flex-column"
+            >
+              <h1>AMG HELPS YOU TO</h1>
+              <h1>GROW YOUR BUSSINES</h1>'
+              <P>We Have A Best..!
+                <span class="bold-style">Developer Team 👨‍💻</span>
+              </P>
+              <button class="btn-style btn-primary">read more</button>
+            </div>
+            {{!right site}}
+
+            <div class="col-md-6 col-12 hero-text order-md-1 order-0">
+              <figure>
+                <img
+                  src="images/growth.png"
+                  alt="herosection_image"
+                  style=" width: -webkit-fill-available;"
+                />
+              </figure>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{!hero section END}}
+
+
+       {{!--hero aboutus start--}}
+       {{>about}}
+
+     {{!--hero about us end--}}
+
+
+     
+         {{!--hero servises end--}}
+         {{>services}}
+         {{!--hero servises end--}}
+
+
+         {{!-- google map --}}
+         {{>map}}
+
+          {{!-- google map --}}
+
+          {{!-- contact us  start--}}
+
+          {{>contact}}
+
+          {{>footer}}
+
+{{!-- contact us end --}}
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+                         <script>
+        // This script checks if the URL has a query parameter "success" and displays an alert if it's present
+        const urlParams = new URLSearchParams(window.location.search);
+        const isSuccess = urlParams.get('success');
+        
+        if (isSuccess === 'true') {
+            window.alert('Data has been successfully saved!');
+        }
+    </script>
+
+ 
+
+  </body>
+</html>
